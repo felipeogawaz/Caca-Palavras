@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Caça Palavras Jogos Felipe</title>
+</head>
+<body>
+    <center>
+        <script>
+            matriz = new Array;
+matriz=[["H", "H", "R", "S", "F", "J", "U", "G", "F", "J", "L", "X", "H", "L", "P", "B", "I", "T", "D", "E"],
+        ["X", "F", "C", "U", "G", "T", "A", "P", "O", "Ç", "H", "K", "P", "Ç", "I", "N", "I", "R", "G", "M"],
+        ["Q", "R", "E", "S", "L", "P", "V", "A", "Ç", "D", "S", "T", "B", "D", "X", "J", "Z", "L", "K", "X"],
+        ["A", "B", "R", "V", "A", "L", "O", "R", "A", "N", "T", "X", "Q", "U", "H", "E", "E", "F", "E", "R"],
+        ["Y", "J", "U", "G", "B", "E", "X", "D", "M", "G", "Z", "O", "O", "E", "A", "D", "L", "I", "C", "V"],
+        ["I", "A", "L", "V", "E", "I", "D", "P", "O", "L", "P", "S", "H", "S", "B", "S", "D", "V", "Q", "O"],
+        ["O", "U", "I", "C", "Z", "N", "G", "E", "N", "X", "F", "D", "E", "O", "B", "K", "A", "A", "J", "S"],
+        ["M", "A", "R", "I", "O", "F", "P", "J", "G", "I", "Q", "A", "I", "S", "O", "V", "Q", "X", "U", "R"],
+        ["M", "E", "P", "A", "V", "E", "V", "U", "U", "X", "F", "L", "K", "A", "I", "N", "P", "B", "A", "Z"],
+        ["L", "T", "J", "B", "I", "L", "L", "P", "S", "R", "G", "S", "J", "R", "D", "O", "L", "C", "Ç", "S"],
+        ["Z", "G", "O", "P", "A", "D", "H", "K", "S", "Q", "A", "F", "I", "F", "A", "A", "H", "A", "P", "S"],
+        ["F", "A", "T", "E", "R", "M", "O", "T", "X", "F", "G", "B", "T", "X", "C", "K", "V", "R", "A", "D"],
+        ["G", "U", "Q", "H", "Ç", "Q", "U", "J", "J", "E", "F", "Ç", "U", "D", "D", "E", "C", "P", "G", "H"],
+        ["C", "J", "V", "S", "C", "K", "V", "X", "A", "F", "O", "R", "T", "N", "I", "T", "E", "Q", "Z", "U"],
+        ["X", "F", "M", "L", "A", "N", "H", "O", "I", "H", "J", "E", "B", "P", "E", "H", "Z", "X", "O", "E"],
+        ["H", "I", "X", "Q", "M", "I", "N", "E", "C", "R", "A", "F", "T", "V", "L", "C", "J", "P", "H", "Ç"]];
+
+        document.write(" <h1> Caça palavras Tema Jogos  </h1> ")
+
+        document.write("<br>")
+        
+        document.write("<table>");
+        for(vetor = 0; vetor < 16; vetor++){
+            document.write("<tr>");
+            for(elemento = 0; elemento < 20; elemento++){
+                //valorant
+                if((vetor == 3) && ((elemento >= 3) && (elemento <= 10))){
+                    document.write("<td class='palavra-cor'>" + matriz[vetor][elemento] + "</td>");
+                }
+        //fifa
+                else if((vetor == 10) && ((elemento >= 11) && (elemento <= 14))){
+                    document.write("<td class='palavra-cor'>" + matriz[vetor][elemento] + "</td>");
+                }
+        //
+                else if((vetor == 11) && ((elemento >= 2) && (elemento <= 6))){
+                    document.write("<td class='palavra-cor'>" + matriz[vetor][elemento] + "</td>");
+                }
+        
+                else if((elemento == 14) && ((vetor >= 3) && (vetor <= 7))){
+                    document.write("<td class='palavra-cor'>" + matriz[vetor][elemento] + "</td>");
+                }
+        
+                else if((elemento == 8) && ((vetor >= 4) && (vetor <= 9))){
+                    document.write("<td class='palavra-cor'>" + matriz[vetor][elemento] + "</td>");
+                }
+        
+                else if((vetor == 7) && ((elemento >= 0) && (elemento <= 4))){
+                    document.write("<td class='palavra-cor'>" + matriz[vetor][elemento] + "</td>");
+                }
+        
+                else if((vetor == 15) && ((elemento >= 4) && (elemento <= 12))){
+                    document.write("<td class='palavra-cor'>" + matriz[vetor][elemento] + "</td>");
+                }
+        
+                else if((vetor == 13) && ((elemento >= 9) && (elemento <= 16))){
+                    document.write("<td class='palavra-cor'>" + matriz[vetor][elemento] + "</td>");
+                }
+        
+                else if((elemento == 16) && ((vetor >= 2) && (vetor <= 6))){
+                    document.write("<td class='palavra-cor'>" + matriz[vetor][elemento] + "</td>");
+                }
+        
+                else if((vetor == 1) && ((elemento >= 4) && (elemento <= 6))){
+                    document.write("<td class='palavra-cor'>" + matriz[vetor][elemento] + "</td>");
+                }
+        
+                else{
+                    document.write("<td>" + matriz[vetor][elemento] + "</td>");
+                }
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+        </script>
+
+    </center>
+
+</body>
+</html>
